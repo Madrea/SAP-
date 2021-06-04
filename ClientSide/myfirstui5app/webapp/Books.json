@@ -1,0 +1,22 @@
+{
+    "Books": [
+      {
+        "Title": "Pineapple",
+        "Author": 21,
+        "Stock": 40,
+        "Date": "2015-04-01T00:00:00"
+      },
+      {
+        "Title": "Milk",
+        "Author": 4,
+        "Stock": 3,
+        "Date": "2015-02-18T00:00:00"
+      },
+      {
+        "Title": "Canned Beans",
+        "Author": 3,
+        "Stock": 18,
+        "Date": "2015-03-02T00:00:00"
+      }
+    ]
+  }

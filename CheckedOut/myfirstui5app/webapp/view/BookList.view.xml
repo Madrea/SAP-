@@ -1,0 +1,84 @@
+<mvc:View
+		controllerName="org.ubb.books.controller.BookList"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:core="sap.ui.core"
+		xmlns="sap.m">
+
+	<Table id="idBooksTable"
+		   items="{
+			path: '/CHECKEDOUTBOOKSSet'
+		}"
+		   growing="true"
+		   growingThreshold="10"
+	>
+
+		<headerToolbar>
+			<Toolbar>
+
+				<content>
+					<Input id="inputFirstName" width="20%" placeholder="FirstName"/>
+					<Input id="inputLastName" width="20%" placeholder="LastName"/>
+					<Input id="inputTitle" width="20%" placeholder="Title"/>
+					<Input id="inputAuthor" width="20%" placeholder="Author"/>
+					<Button
+							press="onSearchButtonPressed"
+							icon="sap-icon://filter"
+					/>
+					<Button
+							press="onSortButtonPressed"
+							icon="sap-icon://sort"
+					/>
+				</content>
+
+				<ToolbarSeparator/>
+
+
+				<ToolbarSeparator/>
+
+			</Toolbar>
+		</headerToolbar>
+
+		<columns>
+			<Column>
+				<Text text="Isbn" />
+			</Column>
+			<Column>
+				<Text text="FirstName" />
+			</Column>
+			<Column>
+				<Text text="LastName" />
+			</Column>
+			<Column>
+				<Text text="DateCheckout" />
+			</Column>
+			<Column>
+				<Text text="DateReturn" />
+			</Column>
+			<Column>
+				<Text text="Title" />
+			</Column>
+			<Column>
+				<Text text="Autor" />
+			</Column>
+			<Column>
+				<Text text="Username" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<ObjectIdentifier
+							text="{Isbn}"/>
+					<Text text="{FirstName}" />
+					<Text text="{LastName}" />
+					<Text text="{DateOfCheckout}"/>
+					<Text text="{DateOfReturn}" />
+					<Text text="{Title}" />
+					<Text text="{Author}" />
+					<Text text="{Username}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+
+</mvc:View>
